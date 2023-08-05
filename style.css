@@ -113,7 +113,7 @@ body {
 
 
 #home {
-    background: url(/assets/home-banner.png) no-repeat top center;
+    background: url(assets/home-banner.png) no-repeat top center;
     background-position: center;
     background-size: cover;
 }
@@ -216,6 +216,9 @@ body {
 }
 
 .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 5px;
     padding: 5px;
 }
@@ -333,11 +336,11 @@ body {
     }
 
     .close-menu {
+        display: block;
         position: absolute;
         top: 18px;
         right: 50px;
         font-size: 25px;
-
     }
 
 
@@ -416,12 +419,6 @@ body {
 
     .wrapper {
         grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
-    }
-
-    .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .footer-text {
